@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "403825624058",
+    "project_id": "sike-app-6473c",
+    "storage_bucket": "sike-app-6473c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:403825624058:android:ecb667ee12bcdfeb69da43",
+        "android_client_info": {
+          "package_name": "com.sike.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "403825624058-qdh6fspm0gjlbj6vg9fkrrc13ta9khfj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlXT6OPRreEqdnbcmECSqTgahOd9c9BoY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "403825624058-qdh6fspm0gjlbj6vg9fkrrc13ta9khfj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

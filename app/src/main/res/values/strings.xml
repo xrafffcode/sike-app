@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">SikeApp</string>
+    <string name="sike">Sike</string>
+    <string name="to_sike">to Sike</string>
+    <string name="welcome">Welcome</string>
+    <string name="welcome_to_sike">Welcome to Sike</string>
+    <string name="pilih_dokter_yang_anda_inginkan_dengan_aplikasi_kami">Pilih dokter yang Anda inginkan dengan aplikasi kami</string>
+    <string name="get_started">Get Started</string>
+    <string name="buat_janji_dengan_dokter">Buat janji dengan dokter</string>
+    <string name="membuat_janji_dengan_dokter_akan_lebih_mudah_dan_cepat">Membuat janji dengan dokter akan lebih mudah dan cepat</string>
+    <string name="lanjut">Lanjut</string>
+    <string name="welcome_to_sike_">Welcome to Sike!</string>
+    <string name="board1">board1</string>
+    <string name="buttom">buttom</string>
+    <string name="tgl">tgl</string>
+    <string name="board2">board2</string>
+    <string name="create_new_account">Create new account</string>
+    <string name="full_name">Full Name</string>
+    <string name="password">Password</string>
+    <string name="email_addres">Email Addres</string>
+    <string name="sudah_siap_menikmati_fitur_dari_sike">Sudah Siap Menikmati Fitur Dari Sike?</string>
+    <string name="buat_akun_jika_belum_punya_akun_masuk_jika_sudah_punya_akun">Buat akun jika belum punya akun, Masuk jika sudah punya akun.</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="please_fill_in_the_form_to_continue">Please fill in the form to continue</string>
+    <string name="next">Next</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
