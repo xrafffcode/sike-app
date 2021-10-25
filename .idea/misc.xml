@@ -10,6 +10,7 @@
         <entry key="..\:/Android Apk/Project/app/src/main/res/drawable/button_square.xml" value="0.290625" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.16597222222222222" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/drawable/ic_launcher_background.xml" value="0.290625" />
+        <entry key="..\:/Android Apk/Project/app/src/main/res/drawable/rectange_serch.xml" value="0.1885135135135135" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/drawable/rectangle_form.xml" value="0.1866220735785953" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/drawable/rectangle_notif.xml" value="0.1763888888888889" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/drawable/rounded.xml" value="0.290625" />
@@ -30,7 +31,7 @@
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/activity_sign_uptwo.xml" value="0.1366120218579235" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/fragment_chat.xml" value="0.1" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/fragment_first.xml" value="0.1" />
-        <entry key="..\:/Android Apk/Project/app/src/main/res/layout/fragment_home.xml" value="0.176" />
+        <entry key="..\:/Android Apk/Project/app/src/main/res/layout/fragment_home.xml" value="0.264" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/fragment_schedule.xml" value="0.1" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/fragment_second.xml" value="0.1" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/fragment_user.xml" value="0.1" />
