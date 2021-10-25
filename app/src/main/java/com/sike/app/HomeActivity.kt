@@ -23,7 +23,6 @@ class HomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_home)
 
 
-
         val homeFragment = HomeFragment()
         val scheduleFragment = ScheduleFragment()
         val chatFragment = ChatFragment()
