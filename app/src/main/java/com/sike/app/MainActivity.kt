@@ -7,11 +7,13 @@ import android.os.Bundle
 import android.view.WindowManager
 import android.view.animation.AnimationUtils
 import android.widget.TextView
+import com.google.firebase.auth.FirebaseAuth
 import com.sike.app.R
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var midView: TextView
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,5 +35,9 @@ class MainActivity : AppCompatActivity() {
             finish()
         }, splashTo.toLong())
 
+
+
     }
+
+
 }

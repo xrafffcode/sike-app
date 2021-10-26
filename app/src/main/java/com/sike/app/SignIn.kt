@@ -11,6 +11,7 @@ import android.util.Patterns
 import android.view.WindowManager
 import android.widget.*
 import com.google.firebase.auth.FirebaseAuth
+import com.sike.app.fragment.HomeFragment
 
 class SignIn : AppCompatActivity() {
 
@@ -93,6 +94,16 @@ class SignIn : AppCompatActivity() {
                     Toast.makeText(this,"${it.exception?.message}", Toast.LENGTH_SHORT).show()
                 }
             }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        if (auth.currentUser != null){
+            Intent(this, HomeActivity::class.java).also { intent ->
+                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                startActivity(intent)
+            }
+        }
     }
 
 

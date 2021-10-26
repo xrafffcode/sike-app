@@ -10,12 +10,13 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-
-
+import com.google.firebase.auth.FirebaseAuth
 
 
 class OnboardOneActicity : AppCompatActivity(), View.OnClickListener {
     @SuppressLint("CutPasteId")
+    private lateinit var auth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.onboard1_main)
@@ -34,6 +35,8 @@ class OnboardOneActicity : AppCompatActivity(), View.OnClickListener {
         val subs = findViewById<TextView>(R.id.tv_desc)
         val ilus1 = findViewById<ImageView>(R.id.iv_ilus1)
 
+        auth = FirebaseAuth.getInstance()
+
         welcome.startAnimation(ttb)
         subs.startAnimation(ttb)
         ilus1.startAnimation(stb)
@@ -50,5 +53,15 @@ class OnboardOneActicity : AppCompatActivity(), View.OnClickListener {
                     startActivity(intentbiasa)
                 }
             }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        if (auth.currentUser != null){
+            Intent(this, HomeActivity::class.java).also { intent ->
+                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                startActivity(intent)
+            }
+        }
     }
 }
