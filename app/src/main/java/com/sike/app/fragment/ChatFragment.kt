@@ -5,22 +5,28 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.google.firebase.firestore.auth.User
+import com.google.firebase.messaging.FirebaseMessagingService
 import com.sike.app.R
+import com.sike.app.databinding.FragmentChatBinding
+import com.sike.app.databinding.FragmentHomeBinding
 
 
 class ChatFragment : Fragment() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    var userList = ArrayList<User>()
 
-    }
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
 
-        return inflater.inflate(R.layout.fragment_chat, container, false)
+        val bind = FragmentChatBinding.inflate(layoutInflater)
+
+
+        return bind.root
     }
 
 

@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.messaging.FirebaseMessagingService
 import com.sike.app.fragment.ChatFragment
 import com.sike.app.fragment.HomeFragment
 import com.sike.app.fragment.ScheduleFragment

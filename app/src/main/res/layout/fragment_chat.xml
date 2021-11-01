@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg"
+    android:orientation="vertical"
     tools:context=".fragment.ChatFragment">
 
 
@@ -14,6 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:fontFamily="@font/nunito_bold"
+        android:layout_gravity="center"
         android:text="Sike Chat"
         android:textColor="@color/black"
         android:textFontWeight="700"
@@ -24,12 +26,21 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <SearchView
+        android:layout_gravity="center"
         android:layout_width="327dp"
         android:layout_height="54dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/reactangel_search"
         android:queryHint="Search Name"
-        android:layout_marginTop="28dp"
-        android:background="@color/white"
+        android:searchIcon="@drawable/ic_baseline_search_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/userRecyclerView"/>
+
+
+</LinearLayout>

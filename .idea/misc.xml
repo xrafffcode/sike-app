@@ -12,16 +12,19 @@
         <entry key="..\:/Android Apk/Project/app/src/main/res/drawable/ic_baseline_photo_camera_24.xml" value="0.1885135135135135" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.16597222222222222" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/drawable/ic_launcher_background.xml" value="0.290625" />
+        <entry key="..\:/Android Apk/Project/app/src/main/res/drawable/reactangel_search.xml" value="0.1885135135135135" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/drawable/rectange_serch.xml" value="0.1885135135135135" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/drawable/rectangle_form.xml" value="0.1866220735785953" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/drawable/rectangle_notif.xml" value="0.1763888888888889" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/drawable/rounded.xml" value="0.290625" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/drawable/rounded_buttom.xml" value="0.2" />
+        <entry key="..\:/Android Apk/Project/app/src/main/res/drawable/search.xml" value="0.1885135135135135" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/drawable/sign.xml" value="0.1885135135135135" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/drawable/squqre_blue.xml" value="0.1885135135135135" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout-v28/onboard3_main.xml" value="0.27447916666666666" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.15625" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout-w936dp/activity_login.xml" value="0.1366120218579235" />
+        <entry key="..\:/Android Apk/Project/app/src/main/res/layout/activity_chat_acticity.xml" value="0.1359289617486339" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/activity_home.xml" value="0.128" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/activity_login.xml" value="0.16799999999999998" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/activity_main.xml" value="0.1334853090172239" />
@@ -31,15 +34,18 @@
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/activity_sign_up_finish.xml" value="0.152" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/activity_sign_up_tre.xml" value="0.152" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/activity_sign_uptwo.xml" value="0.1366120218579235" />
-        <entry key="..\:/Android Apk/Project/app/src/main/res/layout/fragment_chat.xml" value="0.1" />
+        <entry key="..\:/Android Apk/Project/app/src/main/res/layout/fragment_chat.xml" value="0.176" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/fragment_first.xml" value="0.1" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/fragment_home.xml" value="0.2" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/fragment_schedule.xml" value="0.136" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/fragment_second.xml" value="0.1" />
-        <entry key="..\:/Android Apk/Project/app/src/main/res/layout/fragment_user.xml" value="0.2" />
+        <entry key="..\:/Android Apk/Project/app/src/main/res/layout/fragment_user.xml" value="0.536" />
+        <entry key="..\:/Android Apk/Project/app/src/main/res/layout/item_shimmer.xml" value="0.12773224043715847" />
+        <entry key="..\:/Android Apk/Project/app/src/main/res/layout/item_user.xml" value="0.264" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/onboard1_main.xml" value="0.2" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/onboard2_main.xml" value="0.152" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/onboard3_main.xml" value="0.152" />
+        <entry key="..\:/Android Apk/Project/app/src/main/res/layout/shimmer_placeholder_layout.xml" value="0.2" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/signup_main.xml" value="0.2" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1527777777777778" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/menu/menu_nav.xml" value="0.1527777777777778" />

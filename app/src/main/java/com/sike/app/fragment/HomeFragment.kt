@@ -10,16 +10,14 @@ import android.widget.TextView
 import com.google.firebase.auth.FirebaseAuth
 import com.sike.app.R
 import com.sike.app.SignIn
+import com.sike.app.databinding.FragmentHomeBinding
+import com.sike.app.databinding.FragmentUserBinding
 
 
 class HomeFragment : Fragment() {
 
     private lateinit var auth : FirebaseAuth
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -29,15 +27,18 @@ class HomeFragment : Fragment() {
         auth = FirebaseAuth.getInstance()
 
 
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        val bind = FragmentHomeBinding.inflate(layoutInflater)
+
+        val user = auth.currentUser
+
+        bind.username.setText(user?.displayName)
+
+
+        return bind.root
 
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
 
-        
-    }
 
 
 }

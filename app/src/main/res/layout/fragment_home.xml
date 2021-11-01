@@ -7,22 +7,6 @@
     android:background="@drawable/bg"
     tools:context=".fragment.HomeFragment">
 
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="23dp"
-        android:layout_marginTop="24dp"
-        android:fontFamily="@font/nunito_bold"
-        android:text="Hello, Rafli!"
-        android:textColor="#111B21"
-        android:textFontWeight="700"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
     <FrameLayout
         android:id="@+id/frameLayout"
         android:layout_width="wrap_content"
@@ -31,8 +15,6 @@
         android:layout_marginEnd="23dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/textView14"
         app:layout_constraintTop_toTopOf="parent">
 
 
@@ -80,11 +62,44 @@
     <SearchView
         android:layout_width="278dp"
         android:layout_height="38dp"
-        android:background="@color/white"
+        android:background="@drawable/reactangel_search"
+        android:searchIcon="@drawable/ic_baseline_search_24"
         app:layout_constraintBottom_toBottomOf="@+id/imageView6"
         app:layout_constraintEnd_toEndOf="@+id/imageView6"
         app:layout_constraintStart_toStartOf="@+id/imageView6"
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="33dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Hello, "
+            android:textColor="#111B21"
+            android:textFontWeight="700"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_bold"
+            android:text="User"
+            android:textColor="#111B21"
+            android:textFontWeight="700"
+            android:textSize="18dp" />
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
