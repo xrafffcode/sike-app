@@ -13,8 +13,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 
 
-class OnboardOneActicity : AppCompatActivity(), View.OnClickListener {
-    @SuppressLint("CutPasteId")
+class OnboardOneActicity : AppCompatActivity(){
     private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,8 +22,11 @@ class OnboardOneActicity : AppCompatActivity(), View.OnClickListener {
 
         window.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
 
-        val btndtl: Button = findViewById(R.id.btn_to2)
-        btndtl.setOnClickListener(this)
+        val btndtl = findViewById<Button>(R.id.btn_to2)
+        btndtl.setOnClickListener {
+            val intto2 = Intent(this, OnboardtwoActivty::class.java)
+            startActivity(intto2)
+        }
 
         val ttb = AnimationUtils.loadAnimation(this,R.anim.ttb)
         val stb = AnimationUtils.loadAnimation(this,R.anim.stb)
@@ -45,15 +47,6 @@ class OnboardOneActicity : AppCompatActivity(), View.OnClickListener {
 
 
 
-    override fun onClick(v: View?) {
-        if (v != null)
-            when(v.id){
-                R.id.btn_to2 -> kotlin.run {
-                    val intentbiasa = Intent(this, OnboardtwoActivty::class.java)
-                    startActivity(intentbiasa)
-                }
-            }
-    }
 
     override fun onStart() {
         super.onStart()
