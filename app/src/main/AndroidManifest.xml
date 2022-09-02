@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SikeApp">
         <activity
+            android:name=".DetailRsActivity"
+            android:exported="false" />
+        <activity
             android:name=".ChatDetailActivity"
             android:exported="true" />
         <activity

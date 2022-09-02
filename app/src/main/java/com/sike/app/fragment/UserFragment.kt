@@ -1,5 +1,6 @@
 package com.sike.app.fragment
 
+import android.app.Activity
 import android.app.Activity.RESULT_OK
 import android.content.Intent
 import android.graphics.Bitmap
@@ -13,10 +14,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ProgressBar
 import android.widget.Toast
+import androidx.core.app.ActivityCompat.recreate
 import com.facebook.shimmer.ShimmerFrameLayout
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.UserProfileChangeRequest
 import com.google.firebase.storage.FirebaseStorage
+import com.sike.app.OnboardOneActicity
 import com.sike.app.R
 import com.sike.app.SignIn
 import com.sike.app.databinding.FragmentUserBinding
@@ -28,48 +31,39 @@ import java.io.ByteArrayOutputStream
 
 
 class UserFragment : Fragment() {
-
     companion object{
         const val REQUEST_CAMERA = 100
     }
 
-    private lateinit var auth : FirebaseAuth
 
     private lateinit var imageUri: Uri
+
+
+    private lateinit var auth : FirebaseAuth
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         auth = FirebaseAuth.getInstance()
 
         val bind = FragmentUserBinding.inflate(layoutInflater)
 
-        bind.swipeToRefreshLayout.setOnRefreshListener {
-            Toast.makeText(activity, "Page Refreshed", Toast.LENGTH_SHORT).show()
-
-            bind.swipeToRefreshLayout.isRefreshing = false
-            val intent = Intent(activity, UserFragment::class.java)
-            startActivity(intent)
-        }
-
         bind.btnLogout.setOnClickListener{
 
             auth.signOut()
-            val intent = Intent(this.requireContext(), SignIn::class.java).also {
+            val intent = Intent(this.requireContext(), OnboardOneActicity::class.java).also {
                 it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                 startActivity(it)
             }
         }
 
-        bind.ivProfile.setOnClickListener {
+
+        bind.progressBar.startShimmerAnimation()
+
+        bind.camera.setOnClickListener {
             intentCamera()
         }
-
-        val container = bind.progressBar
-
-        container.startShimmerAnimation()
 
         val user = auth.currentUser
 
@@ -82,11 +76,24 @@ class UserFragment : Fragment() {
             }
 
             bind.etName.setText(user.displayName)
+            bind.etEmail.setText(user.email)
+
+            if (user.isEmailVerified){
+                bind.icVerified.visibility = View.VISIBLE
+            }else{
+                bind.icUnverified.visibility = View.VISIBLE
+            }
+
+            if(user.phoneNumber.isNullOrEmpty()){
+
+            }else{
+                bind.etPHone.setText(user.phoneNumber)
+            }
+
         }
 
-
-
         bind.btnUpdate.setOnClickListener {
+
 
             val loading = bind.progressbarPic
             loading.visibility = View.VISIBLE;
@@ -98,6 +105,7 @@ class UserFragment : Fragment() {
             }
 
             val name  = bind.etName.text.toString().trim()
+
 
             if (name.isEmpty()){
                 bind.etName.error = "Nama Harus Diisi"
@@ -120,12 +128,20 @@ class UserFragment : Fragment() {
                 }
         }
 
-
+        bind.verif.setOnClickListener {
+            user?.sendEmailVerification()?.addOnCompleteListener {
+                if (it.isSuccessful) {
+                    Toast.makeText(activity, "Email verifikasi telah dikirim", Toast.LENGTH_SHORT)
+                        .show()
+                } else {
+                    Toast.makeText(activity, "${it.exception?.message}", Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
 
 
         return bind.root
     }
-
 
     private fun intentCamera() {
         Intent(MediaStore.ACTION_IMAGE_CAPTURE).also { intent ->
@@ -139,7 +155,7 @@ class UserFragment : Fragment() {
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if (requestCode == REQUEST_CAMERA && resultCode == RESULT_OK){
+        if (requestCode == REQUEST_CAMERA && resultCode == Activity.RESULT_OK){
             val imgBitmap = data?.extras?.get("data") as Bitmap
             uploadImage(imgBitmap)
         }

@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android Apk/Project/app/src/main/res/drawable-v24/button_onboard.xml" value="0.1885135135135135" />
+        <entry key="..\:/Android Apk/Project/app/src/main/res/drawable-v24/form.xml" value="0.1885135135135135" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1866220735785953" />
+        <entry key="..\:/Android Apk/Project/app/src/main/res/drawable-v24/ic_unverified.xml" value="0.1885135135135135" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/drawable/bg.xml" value="0.1866220735785953" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/drawable/bottom_navigation_selector.xml" value="0.1763888888888889" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/drawable/buttom.xml" value="0.2" />
@@ -25,6 +28,7 @@
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.15625" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout-w936dp/activity_login.xml" value="0.1366120218579235" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/activity_chat_acticity.xml" value="0.1359289617486339" />
+        <entry key="..\:/Android Apk/Project/app/src/main/res/layout/activity_detail_rs.xml" value="0.15710382513661203" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/activity_home.xml" value="0.128" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/activity_login.xml" value="0.16799999999999998" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/activity_main.xml" value="0.1334853090172239" />
@@ -36,14 +40,15 @@
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/activity_sign_uptwo.xml" value="0.1366120218579235" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/fragment_chat.xml" value="0.176" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/fragment_first.xml" value="0.1" />
-        <entry key="..\:/Android Apk/Project/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/Android Apk/Project/app/src/main/res/layout/fragment_home.xml" value="0.264" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/fragment_schedule.xml" value="0.136" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/fragment_second.xml" value="0.1" />
-        <entry key="..\:/Android Apk/Project/app/src/main/res/layout/fragment_user.xml" value="0.152" />
+        <entry key="..\:/Android Apk/Project/app/src/main/res/layout/fragment_user.xml" value="0.2" />
+        <entry key="..\:/Android Apk/Project/app/src/main/res/layout/item_rs.xml" value="0.536" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/item_shimmer.xml" value="0.12773224043715847" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/item_user.xml" value="0.264" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/onboard1_main.xml" value="0.2" />
-        <entry key="..\:/Android Apk/Project/app/src/main/res/layout/onboard2_main.xml" value="0.152" />
+        <entry key="..\:/Android Apk/Project/app/src/main/res/layout/onboard2_main.xml" value="0.1" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/onboard3_main.xml" value="0.152" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/shimmer_placeholder_layout.xml" value="0.2" />
         <entry key="..\:/Android Apk/Project/app/src/main/res/layout/signup_main.xml" value="0.2" />
@@ -58,5 +63,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
   </component>
 </project>

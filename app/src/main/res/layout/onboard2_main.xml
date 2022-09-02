@@ -6,19 +6,27 @@
     android:layout_height="match_parent"
     android:background="@color/bgapp">
 
+    <ImageView
+        android:id="@+id/ilus2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/board1"
+        app:layout_constraintBottom_toTopOf="@+id/rectangle_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slideview1"
+        app:srcCompat="@drawable/ilus2" />
+
     <View
         android:id="@+id/rectangle_4"
         android:layout_width="match_parent"
         android:layout_height="273dp"
-        android:layout_marginTop="92dp"
-        android:layout_marginBottom="-12dp"
         android:background="@drawable/rounded_buttom"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ilus2"
-        app:layout_constraintVertical_bias="0.659" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView"
@@ -34,18 +42,6 @@
         app:layout_constraintEnd_toEndOf="@+id/rectangle_4"
         app:layout_constraintStart_toStartOf="@+id/rectangle_4"
         app:layout_constraintTop_toTopOf="@+id/rectangle_4" />
-
-    <ImageView
-        android:id="@+id/ilus2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="260dp"
-        android:contentDescription="@string/board1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ilus2" />
 
     <TextView
         android:id="@+id/textView2"
